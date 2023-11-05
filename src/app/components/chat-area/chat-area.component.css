@@ -1,0 +1,47 @@
+.chat-window {
+    position: relative;
+    height: 73vh;
+    box-shadow: 0 8px 7px 5px #b3aeae;
+    overflow: auto;
+    
+}
+.text-overlay {
+    opacity: 0.6;
+    font-size: 25px;
+    font-family: 'calibri', 'sa';
+    padding-bottom: 20px;
+    padding-left: 5px;
+  }
+.chat-button {
+    display: flex;
+    justify-content:flex-end;
+    margin-top: auto;
+    padding-right: 16px;
+    padding-bottom: 16px;
+}
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+  .mat-mdc-list-item.mdc-list-item--with-leading-avatar.mdc-list-item--with-one-line, 
+  .mat-mdc-list-item.mdc-list-item--with-leading-checkbox.mdc-list-item--with-one-line, 
+  .mat-mdc-list-item.mdc-list-item--with-leading-icon.mdc-list-item--with-one-line {
+    height: auto;
+}
+
+.mat-line {
+    word-wrap: break-word !important;
+    overflow-wrap: break-word !important;
+    white-space: normal !important;
+}
+.mdc-list-item--with-leading-icon .mdc-list-item__start {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.mdc-list-item.mdc-list-item--with-one-line .mdc-list-item__start {
+    margin-top: 8px;
+    align-self: flex-start;
+}

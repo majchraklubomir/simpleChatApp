@@ -1,0 +1,17 @@
+.non-resizable-textarea {
+    resize: none;
+}
+
+.button {
+    float: right;
+    margin-right: 10px;
+    color: black;
+    background-color: #03dac5;
+}
+
+.form-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

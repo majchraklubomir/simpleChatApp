@@ -1,0 +1,25 @@
+.fullscreen-border {
+    height: 100%;
+    width: 100%;
+    border: 10px solid white;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+  
+.content {
+    display: flex;
+    flex: 1;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    padding-top: 20px;
+    gap: 50px;
+}
+
+app-grid-area{
+    flex: 2;
+}
+app-chat-area {
+    flex: 1;
+}

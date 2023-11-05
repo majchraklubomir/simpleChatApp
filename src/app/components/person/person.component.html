@@ -1,0 +1,12 @@
+<div class="form-container">
+    <mat-form-field appearance="outline" floatLabel="always">
+        <mat-label>Person {{ id }}</mat-label>
+        <textarea class="non-resizable-textarea" matInput rows="4" [(ngModel)]="text" placeholder="Enter your message here..."></textarea>
+    </mat-form-field>
+    <div>
+        <button mat-fab extended class="button" [disabled]="!text" (click)="sendMessage()">
+            <mat-icon>keyboard_arrow_right</mat-icon>
+            SEND
+        </button>
+    </div>
+</div>

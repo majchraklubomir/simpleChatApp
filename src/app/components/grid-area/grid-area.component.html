@@ -1,0 +1,5 @@
+<div class="grid-container">
+    <div class="grid-item" *ngFor="let person of persons; let i = index">
+        <app-person [id]="i+1"></app-person>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+<div class="chat-container">
+    <div class="text-overlay">Chat Window</div>
+    <mat-card class="chat-window">
+        <mat-list>
+            <ng-container *ngFor="let person of persons">
+                 <mat-list-item>
+                    <mat-icon matListItemIcon>bookmark</mat-icon>
+                    <div matListItemLine>
+                        <b>Person {{person.id}}</b>
+                        <br>
+                        <span mat-line>{{person.message}}</span>
+                        <mat-divider></mat-divider>
+                    </div>
+                  </mat-list-item>
+            </ng-container>
+        </mat-list>
+        <mat-card-footer class='chat-button'>
+            <button mat-fab extended color="primary" (click)="clearMessages()">
+                <mat-icon>close</mat-icon>
+                CLEAR CHAT WINDOW
+            </button>
+        </mat-card-footer>
+    </mat-card>
+</div>
+
